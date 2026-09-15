@@ -22,6 +22,41 @@ Emergency departments frequently suffer from bottlenecking during peak daytime h
 
 
 ## Mathematical Model (MILP)
+## 4. Optimization Model
+
+The patient scheduling problem is formulated as a Mixed-Integer Optimization Model with the objective of minimizing the total cumulative waiting time across all patients and stages.
+
+### Objective Function
+
+Minimize the total cumulative waiting time across all $m$ patients ($m=300$) and five stages ($k \in \{1,\ldots,5\}$):
+
+$$
+\min \sum_{i=1}^{m}\sum_{k=1}^{5} waiting\_time_{i,k}
+$$
+
+### Key Decision Variables
+
+- $y_{j,k} \in \{0,1\}$: Binary variable indicating whether nurse $j$ is assigned to stage $k$.
+- $x_{i,k,a} \in \{0,1\}$: Binary variable indicating whether patient $i$ is treated in stage $k$ during time slot $a$.
+- $waiting\_time_{i,k} \geq 0$: Continuous variable representing the waiting time of patient $i$ before service at stage $k$.
+
+### Core Constraints
+
+The optimization model incorporates the following key constraints:
+
+1. **Nurse Assignment:** Each nurse is assigned to exactly one stage, while each stage must have at least one nurse.
+
+2. **Capacity per Time Slot:** The number of patients assigned to a time slot cannot exceed the number of nurses allocated to that stage.
+
+3. **Sequential Patient Flow:** Patients can only be assigned to a stage after arriving at that stage.
+
+4. **Stage-Specific Treatment Rules:** Patients can only be assigned to eligible stages and time slots according to their treatment requirements.
+
+5. **Patient Treatment Order:** Patients are scheduled according to the defined arrival and treatment sequence.
+
+6. **Waiting Time Calculation:** Waiting time is calculated as the difference between the patient's assigned treatment slot and their arrival time at the respective stage.
+
+> **Note:** The equations shown above represent the core formulation of the optimization model. The complete mathematical formulation, including all decision variables, constraints, assumptions, and Big-M formulations, is provided in the accompanying technical report.
 
 <img width="729" height="448" alt="image" src="https://github.com/user-attachments/assets/9945b2fe-eca7-4916-8688-cef2a3bc7ece" />
 
