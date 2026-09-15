@@ -27,7 +27,7 @@ Emergency departments frequently suffer from bottlenecking during peak daytime h
 
 <img width="705" height="551" alt="image" src="https://github.com/user-attachments/assets/591ee38b-7d31-4deb-9183-3b373acbeb26" />
 
-🛠️ Tech Stack & Prerequisites
+## 🛠️ Tech Stack & Prerequisites
 Language: Python 3.10+
 
 Optimization Framework: Pyomo / gurobipy
