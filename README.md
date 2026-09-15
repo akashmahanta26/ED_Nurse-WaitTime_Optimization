@@ -27,11 +27,15 @@ Emergency departments frequently suffer from bottlenecking during peak daytime h
 
 <img width="705" height="551" alt="image" src="https://github.com/user-attachments/assets/591ee38b-7d31-4deb-9183-3b373acbeb26" />
 
-## Tech Stack & Prerequisites
+🛠️ Tech Stack & Prerequisites
 Language: Python 3.10+
-Optimization Framework: gurobipy
-Solver: Gurobi Optimizer 
+
+Optimization Framework: Pyomo / gurobipy
+
+Solver: Gurobi Optimizer (MIPGap set to 0.01 / 1%)
+
 Data Processing: pandas, numpy
+
 Visualization: matplotlib, seaborn
 
 ## 🏥 Emergency Department Workflow
