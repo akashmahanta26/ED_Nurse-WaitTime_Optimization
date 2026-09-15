@@ -29,20 +29,16 @@ Emergency departments frequently suffer from bottlenecking during peak daytime h
 
 ## Tech Stack & Prerequisites
 Language: Python 3.10+
-
 Optimization Framework: gurobipy
 Solver: Gurobi Optimizer 
 Data Processing: pandas, numpy
 Visualization: matplotlib, seaborn
----
+
 ## 🏥 Emergency Department Workflow
 
 Patients move sequentially through up to 5 operational stages:
 
-```text
-[ ARRIVAL ] ──► (1. Resuscitation)* ──► 2. Registration ──► 3. Triage ──► 4. Consultation ──► 5. Observation ──► [ DISCHARGE / ADMISSION ]
-
-```text
+[ ARRIVAL ] ──► (1. Resuscitation)* ──► 2. Registration ──► 3. Triage ──► 4. Consultation ──► 5. Observation ──► [ DISCHARGE / ADMISSION ] 
 
 
 
