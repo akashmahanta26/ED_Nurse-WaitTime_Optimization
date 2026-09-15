@@ -56,11 +56,12 @@ The optimization model incorporates the following key constraints:
 
 6. **Waiting Time Calculation:** Waiting time is calculated as the difference between the patient's assigned treatment slot and their arrival time at the respective stage.
 
+<img width="705" height="551" alt="image" src="https://github.com/user-attachments/assets/591ee38b-7d31-4deb-9183-3b373acbeb26" />
+
 > **Note:** The equations shown above represent the core formulation of the optimization model. The complete mathematical formulation, including all decision variables, constraints, assumptions, and Big-M formulations, is provided in the accompanying technical report.
 
-<img width="729" height="448" alt="image" src="https://github.com/user-attachments/assets/9945b2fe-eca7-4916-8688-cef2a3bc7ece" />
 
-<img width="705" height="551" alt="image" src="https://github.com/user-attachments/assets/591ee38b-7d31-4deb-9183-3b373acbeb26" />
+
 
 ## 🛠️ Tech Stack & Prerequisites
 Language: Python 3.10+
