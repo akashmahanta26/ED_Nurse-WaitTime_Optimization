@@ -20,16 +20,7 @@ Emergency departments frequently suffer from bottlenecking during peak daytime h
 * **Bottleneck Mitigation:** Over **30% of newly added capacity** must be directed to the **Observation** stage (120-minute slot duration) to prevent downstream queue buildup.
 * **Benchmark Alignment:** The optimal allocation yields a nurse-to-patient ratio of **1:3.75**, closely matching Singapore public hospital standards (1:4 to 1:5).
 
----
 
-## 🏥 Emergency Department Workflow
-
-Patients move sequentially through up to 5 operational stages:
-
-```text
-[ ARRIVAL ] ──► (1. Resuscitation)* ──► 2. Registration ──► 3. Triage ──► 4. Consultation ──► 5. Observation ──► [ DISCHARGE / ADMISSION ]
-
----
 ## Mathematical Model (MILP)
 
 <img width="729" height="448" alt="image" src="https://github.com/user-attachments/assets/9945b2fe-eca7-4916-8688-cef2a3bc7ece" />
@@ -43,6 +34,17 @@ Optimization Framework: gurobipy
 Solver: Gurobi Optimizer 
 Data Processing: pandas, numpy
 Visualization: matplotlib, seaborn
+---
+## 🏥 Emergency Department Workflow
+
+Patients move sequentially through up to 5 operational stages:
+
+```text
+[ ARRIVAL ] ──► (1. Resuscitation)* ──► 2. Registration ──► 3. Triage ──► 4. Consultation ──► 5. Observation ──► [ DISCHARGE / ADMISSION ]
+
+```text
+
+
 
 
 
